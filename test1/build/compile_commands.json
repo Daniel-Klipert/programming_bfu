@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Git/programming_bfu/test1/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    -g   -std=gnu++2a -o CMakeFiles\\test1.dir\\main.cpp.obj -c C:\\Git\\programming_bfu\\test1\\main.cpp",
+  "file": "C:/Git/programming_bfu/test1/main.cpp"
+}
+]

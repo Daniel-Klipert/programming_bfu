@@ -18,14 +18,14 @@
 
 int main(){
 
-    const short short_bit = sizeof(short) * 8;
     short A;
+    short short_bit = sizeof(A) * 8;
+
     short i;
 
     std::cout << "Введите A и i: ";
     std::cin >> A >> i;
 
-    short i_value = (A & (1<<i)) > 0;
 
     if (i >= 0 && i < short_bit){
     } 
@@ -34,6 +34,8 @@ int main(){
         return 0; 
     }
 
+    short i_value = (A & (1<<i)) > 0;
+
     if( i_value == 0){
         A = A*A;
         A = A & ~(1<<i);
@@ -41,13 +43,17 @@ int main(){
         std::cout << A << " = " << b2.to_string() << std::endl;
     } 
     else{
-        short a = 125;
+        short a = 125; //0b01111101
         short r = a;
-        for (int k = 0; k <= short_bit; k+=2){
-            r = r & ~(1<<k);
-        }
-        std::bitset<short_bit> r2 = r;
-        std::cout << a << " --> " << r << " = " << r2.to_string() << std::endl;
+        r = a & 0b01010101;
+       // r = r & ~(1<<0);
+       // r = r & ~(1<<2);
+       // r = r & ~(1<<4);
+       // r = r & ~(1<<6);
+
+        std::bitset<8> r2 = r;
+        std::bitset<8> a2 = a;
+        std::cout << a << " = " << a2.to_string()<< " --> " << r << " = " << r2.to_string() << std::endl;
     }
 
 
@@ -60,11 +66,11 @@ int main(){
     case 113:
         std::cout << "Маршрут: Калининград - Чапаево";
         break;
+
     case 114:
     case 141:
         std::cout << "Маршрут: Калининград - Зеленоградск";
         break;
-    
     
     case 117:
         std::cout << "Маршрут: Калининград - Мамоново";

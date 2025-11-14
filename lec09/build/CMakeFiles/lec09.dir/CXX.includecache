@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Git/programming_bfu/lec09/circle.hpp
+
+C:/Git/programming_bfu/lec09/main.cpp
+iostream
+-
+circle.hpp
+C:/Git/programming_bfu/lec09/circle.hpp
+

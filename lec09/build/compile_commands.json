@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Git/programming_bfu/lec09/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    -g   -std=gnu++2a -o CMakeFiles\\lec09.dir\\main.cpp.obj -c C:\\Git\\programming_bfu\\lec09\\main.cpp",
+  "file": "C:/Git/programming_bfu/lec09/main.cpp"
+},
+{
+  "directory": "C:/Git/programming_bfu/lec09/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    -g   -std=gnu++2a -o CMakeFiles\\lec09.dir\\circle.cpp.obj -c C:\\Git\\programming_bfu\\lec09\\circle.cpp",
+  "file": "C:/Git/programming_bfu/lec09/circle.cpp"
+}
+]

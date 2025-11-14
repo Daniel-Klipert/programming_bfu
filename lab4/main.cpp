@@ -1,5 +1,5 @@
 #include <iostream>
-#include <limits>
+
 
 //Вариант 6
 

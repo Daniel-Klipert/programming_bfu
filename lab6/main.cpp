@@ -54,13 +54,13 @@ int main(){
     int new_N = N + B;
 
     dyn_matrix = (int**)realloc(dyn_matrix, new_M);
-    for (int m = 0; m < new_M; ++m){
+    for (int m = new_M - 1; m >= 0; --m){
         dyn_matrix[m] = (int*)realloc(dyn_matrix[m], new_N);
 
-        for (int n = 0; n < new_N; ++n){
+        for (int n = new_N - 1; n >= 0; --n){
 
             if (m >= A && n >= B){
-                continue;
+                dyn_matrix[m][n] = dyn_matrix[m-A][n-B];
             }
             else{
                 dyn_matrix[m][n] = m*C + n*D;

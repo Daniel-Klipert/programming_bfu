@@ -1,0 +1,3 @@
+C:/Git/programming_bfu/lec10/build/CMakeFiles/lec10.dir
+C:/Git/programming_bfu/lec10/build/CMakeFiles/edit_cache.dir
+C:/Git/programming_bfu/lec10/build/CMakeFiles/rebuild_cache.dir

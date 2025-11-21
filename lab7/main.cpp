@@ -99,19 +99,24 @@ void p7(vector<int>& arr){
     }
     int j = 2;
     if(cond){
-        j = 1;
-    }
-    int cb = 0;
-    int switcher = 1; 
-    for (int i = 0; i < kArr.size(); i+=j){
-        if(switcher){
-            arr.insert(arr.begin()+cb, kArr.at(i));
-            ++cb;
-            --switcher;
-        }else{
-            arr.push_back(kArr.at(i)); 
-            ++switcher;
+        int cb = 0;
+        int switcher = 1; 
+        for (int i = 0; i < kArr.size(); i+=1){
+            if(switcher){
+                arr.insert(arr.begin()+cb, kArr.at(i));
+                ++cb;
+                --switcher;
+            }else{
+                arr.push_back(kArr.at(i)); 
+                ++switcher;
+            }
         }
+    } else{
+        for (int i = 0; i < arr.size(); i+= 2){
+            arr.insert(arr.begin()+i+1, arr.at(i));
+            ++i;
+        }
+
     }
     cout << "Стало: ";
     p1(arr);

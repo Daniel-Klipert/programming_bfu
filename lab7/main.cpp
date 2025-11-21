@@ -125,6 +125,7 @@ void p7(vector<int>& arr){
 void console_menu(){
 
     vector<int> array;
+    array.reserve(1000);
 
     int p = 1;
 
